@@ -61,7 +61,10 @@ function mapStateToProps(_ref2) {
 function mapDispatchToProps(dispatch) {
     return {
         closePopup: function closePopup() {
-            return dispatch(popupActions.closePopup);
+            return dispatch(popupActions.closePopup());
+        },
+        confirmAction: function confirmAction(action) {
+            return action();
         }
     };
 }

@@ -9,7 +9,7 @@ exports.default = function () {
     var action = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
     switch (action.type) {
-        case action.OPEN_POPUP:
+        case actionTypes.OPEN_POPUP:
             return Object.assign({}, state, {
                 modalProps: Object.assign({}, initialState, modalProps, action.modalProps),
                 open: true

@@ -24,7 +24,8 @@ function mapStateToProps({ popup }) {
 
 function mapDispatchToProps(dispatch) {
     return ({
-        closePopup: () => dispatch(popupActions.closePopup)
+        closePopup: () => dispatch(popupActions.closePopup()),
+        confirmAction: (action) => action()
     })
 }
 
