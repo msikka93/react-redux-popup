@@ -11,7 +11,7 @@ exports.default = function () {
     switch (action.type) {
         case actionTypes.OPEN_POPUP:
             return Object.assign({}, state, {
-                modalProps: Object.assign({}, initialState, modalProps, action.modalProps),
+                modalProps: Object.assign({}, initialState.modalProps, action.modalProps),
                 open: true
             });
         case actionTypes.CLOSE_POPUP:
