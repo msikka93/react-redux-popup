@@ -8,7 +8,7 @@ import Footer from './Footer'
 
 function PopupContainer ({ modalProps, open, closePopup }) {
     return(
-        <Dialog open={open} onClose={closePopup} aria-labelledby="form-dialog-title">
+        <Dialog open={open} onClose={closePopup} disableBackdropClick={false} aria-labelledby="form-dialog-title">
             <Header title={modalProps.title} hideHeader={modalProps.hideHeader} />
             <DialogContent>
                 {modalProps.content}

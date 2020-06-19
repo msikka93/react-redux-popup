@@ -41,7 +41,7 @@ function PopupContainer(_ref) {
 
     return _react2.default.createElement(
         _Dialog2.default,
-        { open: open, onClose: closePopup, 'aria-labelledby': 'form-dialog-title' },
+        { open: open, onClose: closePopup, disableBackdropClick: false, 'aria-labelledby': 'form-dialog-title' },
         _react2.default.createElement(_Header2.default, { title: modalProps.title, hideHeader: modalProps.hideHeader }),
         _react2.default.createElement(
             _DialogContent2.default,
