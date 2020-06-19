@@ -15,7 +15,7 @@ exports.default = function () {
                 open: true
             });
         case actionTypes.CLOSE_POPUP:
-            return Object, assign({}, state, { modalProps: {}, open: false });
+            return Object.assign({}, state, { modalProps: {}, open: false });
         default:
             return state;
     }
